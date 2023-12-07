@@ -21,7 +21,8 @@ public static class DataAccessServiceRegistration
         //services.AddDbContext<BaseDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("RentACar")));
 
         services.AddScoped<IProductDal, EfProductDal>();
-       
+        services.AddScoped<ICategoryDal, EfCategoryDal>();
+
 
         return services;
     }
