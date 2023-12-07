@@ -22,6 +22,7 @@ public static class DataAccessServiceRegistration
 
         services.AddScoped<IProductDal, EfProductDal>();
         services.AddScoped<ICategoryDal, EfCategoryDal>();
+        services.AddScoped<IOrderDal, EfOrderDal>();
 
 
         return services;

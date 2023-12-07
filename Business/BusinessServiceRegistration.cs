@@ -10,6 +10,7 @@ public static class BusinessServiceRegistration
     {
         services.AddScoped<IProductService, ProductManager>();
         services.AddScoped<ICategoryService, CategoryManager>();
+        services.AddScoped<IOrderService, OrderManager>();
 
 
         return services;
